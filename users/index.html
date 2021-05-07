@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>userdata</title>
+</head>
+<body>
+    <script src='script.js'></script>
+    <div>
+        <p><b>Enter your name:</b><br>
+        <input type='text' id='userName'>
+        </p>
+        <p><b>Enter your age:</b><br>
+        <input type='text' id='userAge'>
+        </p>
+        <p><b>Enter your favourite film:</b><br>
+        <input type='text' id='userFilm'>
+        </p>
+    </div>
+    <button id='commit' onclick="addValue()">✓</button>
+    <br>
+    <button id='sortName' onclick="sortName()" style="visibility:hidden">Sort By Name</button>
+    <button id='sortAge' onclick="sortAge()" style="visibility:hidden">Sort By Age</button>
+    <button id='sortFilm' onclick="sortFilm()" style="visibility:hidden">Sort By Film</button>
+    <table border="1" style="visibility:hidden" id='userTable'>
+        <tr>
+         <th>Name</th>
+         <th>Age</th>
+         <th>Favourite film</th>
+        </tr>
+    </table>
+    
+</body>
+</html>
